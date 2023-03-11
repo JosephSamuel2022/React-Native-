@@ -11,7 +11,7 @@ const Register = ({navigation}) => {
       </View>
       <AppInput placeholder="Name" icon={"account"} />
       <AppInput placeholder="Email" icon={"email"} />
-      <AppInput placeholder="Number" icon={"phone"} />
+      <AppInput placeholder="Number" icon={"phone"} keyboardType={"numeric"} maxLength={10} />
       <AppInput placeholder="Address" icon={"map-marker"} />
       <AppInput placeholder="Password" icon={"lock"} />
       <AppInput placeholder="Confirm Password" icon={"lock"} />
