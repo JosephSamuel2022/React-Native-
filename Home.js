@@ -23,12 +23,20 @@ const Home = ({navigation}) => {
       <View style={styles.buttonContainer}>
         <AppButton color="#FF4E00" title={"Login"} onPress={()=>{navigation.navigate("LoginForm")}}/>
         <AppButton color="#FF4E00" title={"Register"} onPress={()=>{navigation.navigate("Register")}} />
+        <AppButton color="#FF4E00" title={"Hospital Login"} onPress={()=>{navigation.navigate("HospitalLoginForm")}}/>
+        <AppButton color="#FF4E00" title={"Hospital Register"} onPress={()=>{navigation.navigate("HospitalRegister")}} />
       </View>
     </ImageBackground>
   );
 };
 const styles = StyleSheet.create({
-  container: {
+    image: {
+        flex: 1,
+        width: null,
+        height: null,
+        resizeMode: 'contain'
+    },
+    container: {
     flex: 1,
     justifyContent: "flex-end",
   },
